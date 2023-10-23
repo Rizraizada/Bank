@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+   
+</head>
+<body>
+    <header>
+    <h1>Hello buddy</h1>
+</header>
+<main>
+    <section>
+        <article class="blog">
+            <h3>Blog-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo atque obcaecati pariatur rerum ullam laborum. Placeat, doloribus quasi, voluptates aspernatur, incidunt totam commodi quas ipsum molestiae magnam necessitatibus distinctio?</p>
+        </article>
+        <article class="blog">
+            <h3>Blog-2</h3>
+            <p>Voluptas accusantium earum provident quod cumque consequuntur quis dolore vel quos officia reiciendis, nostrum eveniet ratione itaque, tenetur tempora iusto mollitia laborum eum. Mollitia quis, recusandae cumque atque blanditiis ipsa.</p>
+        </article>
+        <article class="blog">
+            <h3>Blog-3</h3>
+            <p>Cumque totam quibusdam minus corporis. Dignissimos distinctio alias dolores, beatae cupiditate nam illo vero error est delectus veritatis placeat, sint deleniti! Quod, quae! Cum vel expedita facilis. Atque, itaque cum?</p>
+        </article>
+    </section>
+</main>
+<script>
+    const blogTitles = document.getElementsByTagName('h3');
+    console.log(blogTitles);
+    for(const h3 of blogTitles){
+        console.log(h3.innerText);
+    }
+    const blogs=document.getElementsByClassName('blog');
+    for(const blog of blogs){
+      blog.style.border = '2px solid orange';
+      blog.style.borderRadius='10px';
+      blog.style.margin='10px';
+    }
+    
+
+</script>
+    
+</body>
+
+</html>
